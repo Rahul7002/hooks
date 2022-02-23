@@ -5,6 +5,7 @@ import HookMouse from './Components/HookMouse';
 import HookCleanup from './Components/HookCleanup';
 import IncorrectHooks from './Components/IncorrectHooks';
 import FetchingData from './ComponentUse/FetchingData';
+import SingleFetch from './ComponentUse/SingleFetch';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
     {/* <ArrayMap/> */}
     {/* <EffectHook /> */}
     {/* <HookCleanup /> */}
-    <FetchingData/>
+    {/* <FetchingData/> */}
+    <SingleFetch />
     </div>
   );
 }

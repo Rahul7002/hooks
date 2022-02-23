@@ -19,7 +19,7 @@ function FetchingData() {
      <ul>
        {
          posts.map(any =>(
-           <li key={any.id}> {any.title}</li>
+           <li> {any.userId}) {any.title}</li>
          ))
        }
      </ul>
