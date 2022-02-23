@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ArrayMap from './Components/ArrayMap';
+import Input3 from './Components/Input3';
+import EffectHook from './Components/EffectHook';
+import HookMouse from './Components/HookMouse';
+import HookCleanup from './Components/HookCleanup';
+import IncorrectHooks from './Components/IncorrectHooks';
+import FetchingData from './ComponentUse/FetchingData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <Input3/> */}
+    {/* <ArrayMap/> */}
+    {/* <EffectHook /> */}
+    {/* <HookCleanup /> */}
+    <FetchingData/>
     </div>
   );
 }
