@@ -11,9 +11,13 @@ import React, { useReducer } from "react";
 import "./App.css";
 import UseReducer_useEffect from "./Components/DataFetching/UseReducer_useEffect";
 import UseState_useEffect from "./Components/DataFetching/UseState_useEffect";
-import CounterOne from "./Components/useReducer/CounterOne";
+import ParentComponent from "./Components/UseCallbackHook/ParentComponent";
+import Counter from "./Components/useMemoHook/Counter";
 import CounterTwo from "./Components/useReducer/CounterTwo";
 import MultipleHookReducer from "./Components/useReducer/MultipleHookReducer";
+import ClassTimer from "./Components/useRefHook/ClassTimer";
+import FocusInput from "./Components/useRefHook/FocusInput";
+import FunctionalTimer from "./Components/useRefHook/FunctionalTimer";
 import ComponentA from "./Components/useResucer+useContext/ComponentA";
 import ComponentB from "./Components/useResucer+useContext/ComponentB";
 import ComponentC from "./Components/useResucer+useContext/ComponentC";
@@ -49,7 +53,8 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-    <UseReducer_useEffect />
+    <ClassTimer />
+    <FunctionalTimer />
     </div>
     // </CountContext.Provider>
   );

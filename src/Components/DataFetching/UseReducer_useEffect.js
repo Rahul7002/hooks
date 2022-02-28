@@ -17,7 +17,7 @@ const reducer=(state,action)=>{
             }
         case 'fetch_error':
             return {
-                loading:true,
+                loading:false,
                 post:{},
                 error:'Something went wrong'
             }    
@@ -34,18 +34,18 @@ useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts/1")
       .then((res) => {
-        dispatch({type:'fetch_success',payload:state.response.data})
+        dispatch({type:'fetch_success',payload: res.data})
       })
       .catch(error => {
         dispatch({type:'fetch_error'})
       });
-  }, []);
+  },[]);
   return (
     <div>UseReducer_useEffect
     
-    <h1>FetchingData with useReducer + useEffect</h1>
-      {state.loading ?'Loading':state.posts.title}
-      {state.error ? 'errror occured':null}
+    <h1>FetchingData with useReducer + useEffect </h1>
+      {state.loading ?'Loading_':state.post.title}
+      {state.error ? state.error :null}
     
     </div>
   )
